@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* 
+            선택자 종류, !important 는 가장 우선순위 적용하기
+            1. 태그 선택자 (가장 넓은 범위)
+            2. 클래스 선택자 (중간 범위)
+            3. 아이디 선택자 (좁은 범위)
+        */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 1px;
+            color: darkblue 
+        }
+        .cls1 {
+            font-weight: bold;
+            color: black;
+        }
+        #hello {
+            color: seagreen;
+        }
+        /* 숨기는 법 3가지, opacity는 리소스를 많이 잡아먹는다, 지양하기 */
+        #visi {
+            visibility: hidden;
+            display: none;
+            opacity: 0;
+        }
+        /* POSITION
+            static(기본값), fixed, sticky, relative, absoulte, 
+        */
+        .abs {
+            position: absolute;
+        }
+        .mini {
+            width: 20px; height: 20px; background-color: slateblue; top: 10px; right: 50px;
+        }
+        .sta { left: 100px; }
+        .rel { position: relative; left: 20px; top: 20px; }
+        .relOri { position: relative; }
+        
+    </style>
+</head>
+
+<body>
+    <!-- CSS 사용 위치 : 적용되는 순위가 중요하다 ! -->
+    <!-- CSS tag에 사용 : 우선순위가 높음, 디테일한 적용 > 범용적인 적용-->
+    <h1 style="font-size: 10px; font-weight: normal;">안녕하세요</h1>
+
+    <div style="color: red;">안녕하세요 DIV 입니다</div>
+    <div class="cls1">안녕하세요 DIV 입니다</div>
+    <div id="hello">안녕하세요 DIV 입니다</div>
+
+
+    <div>1</div>
+    <div class="sta">2</div>
+    <div class="relOri">3</div>
+    <div class="rel">4</div>
+    <div>
+        <div class="mini relOri"></div>
+    </div>
+    <div class="relOri">
+        <div class="mini abs"></div>
+    </div>
+</body>
+</html>

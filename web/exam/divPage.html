@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divPage</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        #container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            height: 100px; 
+            background-color: cornflowerblue;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+        footer {
+            display: flex;
+            height: 80px;
+            background-color: rgb(232, 179, 245);
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav>nav</nav>
+        <section style="flex: 1;">
+            <div style="flex: 1; background-color: yellow;">Yellow</div>
+            <div style="flex: 8; background-color: yellowgreen;">YellowGreen</div>
+        </section>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            margin-top: 50px;
+            margin-left: auto; 
+            margin-right: auto;
+            border: 1px solid black;
+            padding: 20px 20px;
+        }
+        .first{
+            width: max-content;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .center_row {
+            display: flex;
+            justify-content: center;
+        }
+        .ctnt {
+            margin-left: 30px;
+        }
+        .detail {
+            margin-bottom: 20px;
+        } 
+    </style>
+</head>
+<body class="container">
+    <div class="center">
+        <h1>회원가입</h1>
+        <div>코리아 홈쇼핑에 오신걸 환영합니다.</div>
+    </div>  
+    <hr>
+    <form>
+        <h3 class="first">필수 정보</h3>
+            <div class="ctnt">
+                <div style="margin-bottom: 5px;"><label style="margin-right: 30px;">아이디</label><input class="label" type="text" autofocus></div>
+                <div style="margin-bottom: 5px;"><label style="margin-right: 14px;">비밀번호</label><input class="label" type="text"><span style="color: red; font-size: small;">비밀번호는 영문자, 숫자를 포함하여 13자 이내로 입력하시오.</span></div>
+                <div style="margin-bottom: 5px;"><label style="margin-right: 46px;">이름</label><input  class="label" type="text" placeholder="공백없이 입력하세요"></div>
+                <div style="margin-bottom: 5px;"><label style="margin-right: 30px;">휴대폰</label><input class="label" type="text" placeholder="-(대쉬) 기호없이 입력하세요"></div>
+                <div style="margin-bottom: 5px;"><label style="margin-right: 30px;">이메일</label><input class="label" type="text"></div>
+                <div style="margin-bottom: 5px;"><label style="margin-right: 46px;">주소</label><input style="width: 500px;" type="text"></div>
+            </div>
+        <h3 class="first">추가 정보</h3>
+            <div class="ctnt">
+                <div style="font-size: large;">성별</div>
+                <div class="detail">
+                    <label><input type="radio" name="sex" checked>남자</label>
+                    <label><input type="radio" name="sex">여자</label>
+                </div>
+                <div style="font-size: large;">관심분야</div>
+                    <div class="detail">
+                        <input type="checkbox">의류 <input type="checkbox">뷰티 <input type="checkbox">식품 <input type="checkbox">인테리어 <input type="checkbox">디지털
+                    </div>
+                <div style="font-size: large;">취미</div>
+                <select>
+                    <option>음악감상</option>
+                    <option>영화관람</option>
+                    <option>여행</option>
+                    <option>운동</option>
+                    <option>등산</option>
+                </select>        
+            </div>    
+            <hr>
+            <div class="center_row">
+                <input style="padding: 5px; width: 100px; margin: 15px;" type="button" value="가입하기">
+                <input style="padding: 5px; width: 100px; margin: 15px;" type="reset" value="다시쓰기">
+        </div>
+    </form>
+</body>
+</html>

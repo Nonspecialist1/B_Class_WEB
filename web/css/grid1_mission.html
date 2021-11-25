@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            border: 1px solid black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            align
+        }
+        .container {     
+            display: grid;
+            grid-template-columns: 300px 30px 100px;
+            grid-template-rows: 300px 30px;
+        }
+        .item1 { background-color: aquamarine; }
+        .item2 { background-color: rgb(7, 117, 80); }
+        .item3 { background-color: rgba(182, 171, 109, 0.809); }
+        .item4 { background-color: rgba(172, 76, 151, 0.762); }
+        .item5 { background-color: red; }
+        .item6 { background-color: blue; }
+    </style>
+</head>
+<body>
+    <!-- 플렉스와 다르게 그리드의 방향은 column으로 고정되어 있음-->
+    <div class="container">
+        <span class="item item1">1</span>
+        <span class="item item2">2</span>
+        <span class="item item3">3</span>
+        <span class="item item4">4</span>
+        <span class="item item5">5</span>
+        <span class="item item6">6</span>
+    </div>
+    
+</body>
+</html>
